@@ -6,7 +6,7 @@
 \book {
   \bookpart {
     \section "Te Deum"
-    \addTocEntry
+    % \addTocEntry
     \paper { indent = 3\cm }
     \score {
       <<
@@ -61,13 +61,13 @@
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "Organo" "e Bassi" }
-            % \transpose c c,
+            \transpose c c,
             \TeDeumOrgano
           }
         >>
         \new FiguredBass { \TeDeumBassFigures }
       >>
-      \layout { }
+      % \layout { }
       \midi { \tempo 4 = 90 }
     }
   }

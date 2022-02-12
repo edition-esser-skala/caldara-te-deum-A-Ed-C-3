@@ -6,7 +6,25 @@
 \include "ees.ly"
 
 
+markFiat = {
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  \mark \markup { \remark "Fiat Toccato ad libitum" }
+}
+
+
 tempoTeDeum = \tempoMarkup "Allegro"
+tempoTibiOmnes = \tempoMarkup "[Tempo deest]"
+tempoSanctus = \tempoMarkup "Adagio"
+tempoPleni = \tempoMarkup "Allegro"
+tempoTeGloriosus = \tempoMarkup "Andante"
+tempoPatrem = \tempoMarkup "[Tempo deest]"
+tempoTuDevicto = \tempoMarkup "Andante"
+tempoTeErgo = \tempoMarkup "Adagio"
+tempoAeternaFac = \tempoMarkup "Andante"
+tempoSalvum = \tempoMarkup "[Tempo deest]"
+tempoEtRege = \tempoMarkup "[Tempo deest]"
+tempoDignare = \tempoMarkup "[Tempo deest]"
+tempoInTe = \tempoMarkup "Allegro"
 
 
 \include "notes/clno1.ly"
