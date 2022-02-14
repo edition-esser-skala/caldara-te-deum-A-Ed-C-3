@@ -141,7 +141,8 @@ TeDeumAlto = {
     g[ f g a] g[ a g f] e8. e16 f4
     f( e) f f8 a %170
     g8. g16 g4 f f8 f \noBreak
-    f([ e)] e4 r2\fermata \markFiat \bar "||"
+    f([ e)] e4 r2\fermata \bar "||" \noBreak
+    \cadenzaOn s4*5^\markup \remark "Toccato tacet" \cadenzaOff \bar "||" \noBreak
     \key c \dorian \tempoTeErgo
       \mvTr g2\fE^\tuttiE r8 g g g \noBreak
     a4. a8 a4 a8 a

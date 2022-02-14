@@ -117,7 +117,8 @@ TeDeumSoprano = {
     b[ a b c] b[ c b c] b8. b16 a4
     g2 f4 a8 f %170
     c'8. c16 c4 c h8 h \noBreak
-    c4 c r2\fermata \markFiat \bar "||"
+    c4 c r2\fermata \bar "||" \noBreak
+    \cadenzaOn s4*5^\markup \remark "Toccato tacet" \cadenzaOff \bar "||" \noBreak
     \key c \dorian \tempoTeErgo
       \mvTr c2\fE^\tutti r8 c c c \noBreak
     c4. c8 c4 c8 c
@@ -141,7 +142,7 @@ TeDeumSoprano = {
     c1 e2
     dis2. dis4 e2 %200
     e e( dis)
-    e h1
+    e1^\critnote h2
     a2. a4 g2
     a fis1 \noBreak
     e1.\fermata \bar "||" %205

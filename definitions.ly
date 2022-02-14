@@ -2,14 +2,8 @@
 
 #(define option-movement-title-format "title")
 #(define option-init-toc #t)
-#(define option-print-all-bar-numbers #t)
+#(define option-print-all-bar-numbers #f)
 \include "ees.ly"
-
-
-markFiat = {
-  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-  \mark \markup { \remark "Fiat Toccato ad libitum" }
-}
 
 
 tempoTeDeum = \tempoMarkup "Allegro"

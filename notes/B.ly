@@ -85,7 +85,8 @@ TeDeumBasso = {
     c4 r16 c c c c8 c c c16 c \noBreak
     c4. c8 c2\fermata \bar "||"
     \key f \major \tempoTuDevicto R1*17 \noBreak %171
-    R1\fermata \markFiat \bar "||"
+    R1\fermata \bar "||" \noBreak
+    \cadenzaOn s4*5^\markup \remark "Toccato tacet" \cadenzaOff \bar "||" \noBreak
     \key c \dorian \tempoTeErgo
       \mvTr c2\fE^\tutti r8 c c c \noBreak
     fis4. fis8 fis4 fis8 fis
@@ -129,7 +130,7 @@ TeDeumBasso = {
     e8[ d'16 h] e,8[ e'16 d] c8[ h16 a] gis[ h e, gis]
     a8 a, r a' f e16 d e8 e, %225
     a4 r r2
-    r4 a'8 g16([ f)] e8 c r d
+    r4 a'8 g!16([ f)] e8 c r d
     e16([ c d e] d[ g f g] e8) c e fis
     g g r g c8. c16 g4
     r8^\critnote a([ g)] f e c16 c g'8 g, %230

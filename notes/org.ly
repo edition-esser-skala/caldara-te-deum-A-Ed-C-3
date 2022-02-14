@@ -165,7 +165,8 @@ TeDeumOrgano = {
     g g16 f e8 d c4 f
     c2 f,4 f' %170
     e2 d \noBreak
-    c r\fermata \markFiat \bar "||"
+    c r\fermata \bar "||" \noBreak
+    \cadenzaOn \override Stem.stencil = ##f d4^\markup \remark "Fiat Toccato ad libitum" d d d d \revert Stem.stencil \cadenzaOff \bar "||" \noBreak
     \key c \dorian \tempoTeErgo \newSpacingSection
       \mvTr c2\fE-\tutti r8 c c c \noBreak
     fis2 fis
@@ -219,8 +220,8 @@ TeDeumOrgano = {
     c,4 c'8 h a4\pE gis
     a, a'8 g f e f d %220
     e e16 d e8 c f d g e
-    a f h g c4 r8 g
-    c,4 c8 d e4 r
+    a f h g c4 r8 g\fE
+    c,4 c8\pE d e4 r
     e r e r8 e
     a,4 r8 a' f d e e, %225
     a4 r8 a\fE e'4 r8 e
@@ -231,7 +232,7 @@ TeDeumOrgano = {
     c4 r r8 c\fE e g
     e c r c g' g, r g
     c4 r8 a' g h r g
-    f h r f g16 h h g g h h g
+    f d'^\critnote r f, g16 h h g g h h g
     g4 r8 g, c e f g \noBreak %235
     c,4 r c r\fermata \bar "||"
     \clef "treble_8" \time 3/2 \tempoDignare \newSpacingSection
@@ -336,16 +337,16 @@ TeDeumBassFigures = \figuremode {
   r2. %35
   r
   r4. <_+>8
+  r4. <[6!]>8
   r2
-  r
-  r %40
-  <6>
-  r
-  r
-  <6>
-  r4 <[6 5]> %45
+  r4. <[6]>8 %40
+  <6>2
+  r4. <[6\\]>8
   r2
   <6>
+  r4 \bo <[6 5]>8 \bc <[\t \t]> %45
+  r4. <[6]>8
+  <6>2
   r
   r4. <6>8
   r2 %50
@@ -360,22 +361,22 @@ TeDeumBassFigures = \figuremode {
   r4 <6 [_+]> r2
   <6 [_+]>4 <6\\ 5> \bo <[5+ _+]> <6 4> %60
   <5+ \t> <\t _+> \bc <[5+ \l]>2
-  r2 r8 <6>
+  r2 <[2]>8 <6>
   r2 <6\\>4
-  r2 r8 <6>
-  r2 <6>4 %65
-  r2.
-  r
-  r
-  r4 <4> <3>
+  r2 <[2]>8 <6>
+  r2 <6 [5]>4 %65
+  r2 \bo <[6]>8 \bc q
+  r2 \bo <[6]>8 \bc q
+  r2 <[6 5]>4
+  r \bo <[6] 4> \bc <[5] 3>
   r2. %70
   r
   r2 <[5] 2>8 <6>
   r2.
   r8 \bo <[6]>4 \bc q8 <7>4
-  r2. %75
-  r
-  r
+  r2 \bo <[5 2]>8 <\t \t> %75
+  r2 <6>8 q
+  r2 <6>8 \bc <[6 \l]>
   r4 <4> <3>
   r2.*12 %90
   r4. <3>8 <2> <[6]>
@@ -384,9 +385,9 @@ TeDeumBassFigures = \figuremode {
   <_+>2 <6>4
   r <6>2 %95
   r4 <6 5> <[7 _+]>
-  r <4> <_+>
-  r2.
-  <6>
+  r \bo <[6] 4> \bc <[5] _+>
+  r2 <[6]>4
+  <6>2.
   r %100
   <9>4 <8>2
   r2.
@@ -398,19 +399,19 @@ TeDeumBassFigures = \figuremode {
   r
   r2.*6 %114
   r2 <2>8 <6> %115
-  r2.
+  r2 <[6\\]>4
   r2 <2>8 <6>
-  r2 <6>4
-  r2.
-  r %120
-  r
-  r4 <4> <3>
-  r2.
-  r
-  r %125
+  r2 <6 [5]>4
+  r2 \bo <[6 \l]>8 <6>
+  r2 <6>4 %120
+  r2 \bc <[6 5]>4
+  r4 \bo <[6] 4> \bc <[5] 3>
+  r2 \bo <[5 2]>8 <\t \t>
+  r <6> \bc <[6 5]>2
+  r2. %125
   r4. <6>4 <[_+]> <6 5>8
   <_+>1
-  <[6]>
+  \bo <[6 5]>2 r8 <6> <6 5> \bc <[_+ \l]>
   r4. <[6]>4 <_+> <6 5>8
   r4 <10>8 q q q q q %130
   r4 <6>2 <6>4
@@ -418,7 +419,7 @@ TeDeumBassFigures = \figuremode {
   r2 <6!>4 <5>
   r4. <6>8 r2
   r4. <6>8 r2 %135
-  <7>4 <6\\> <4> <3>
+  <7>4 <6\\> <4>8 <3>4.
   <6>2 q4 q
   \bo <[7]> \bc <[6]> r4. <6>8
   r2. <6>4
@@ -432,7 +433,7 @@ TeDeumBassFigures = \figuremode {
   r2 <6 4>4 <5 3>
   <4 2> <6 5>2.
   r2 <6>
-  <7>4. <[7] _+>8 <4>4 <3> %150
+  <7>4. <[7] _+>8 <4>8 <3>4. %150
   r2 r8 <_+>4.
   r2 r8 \bo <[6]> <4> \bc <[3]>
   r2 \bo <[6 4]>4 \bc <[5 3]>
@@ -455,6 +456,7 @@ TeDeumBassFigures = \figuremode {
   <4>4 <3>2. %170
   <6>2 <7>4 <6!>
   \bo <[4]> \bc <[3]>2.
+  s4*5
   r1
   <6 5>2 <\t \t>
   <6 4! 2> <6> %175
@@ -465,14 +467,14 @@ TeDeumBassFigures = \figuremode {
   r1 %180
   <6 4 2>4 <6>8 <[6]> \bo <[5 3]>4 \bc <[6 4]>
   <4> <3>2.
-  r1
+  r2.. <[6]>8
   r4 <6>2 <4>8 <3>
   r2.. \bo <[6]>8 %185
   r4 <6>4. \bc <[6]>4 <6>8
-  r2 <5>
+  r2 <[\t]>
   <6>8 <[6]> r2.
-  r1
-  r %190
+  r2.. \bo <[6 4]>8
+  \bc <[5 3]>1 %190
   r4 <6>4. q8 q4
   r1
   r1.
@@ -488,28 +490,28 @@ TeDeumBassFigures = \figuremode {
   <5>2 <\t>1
   r2 \bo <[5+] 4> \bc <[\t] _+>
   r1. %205
-  r1
-  r
+  r2. \bo <[6]>4
+  \bc q1
   r4. <6\\>8 r2
   r1
-  r2 r8 <6>4. %210
+  r2 r8 <6> <[6]>4 %210
   r1
   r2. <6>4
-  <5>1
-  r
+  <5>4 \bo <[6]>8 \bc q r2
+  r1
   r %215
   r
-  r
-  r4. <5>4 <6>8 q4
+  r2 r8 <[6]>4.
+  r <5>4 <6>8 q4
   r4. <6\\> <[6]>4
   r2.. <6>8 %220
   <_+>4 <6 [_!]>2.
   r1
   r4. <6>8 <_+>2
   r \bo <[6 4]>4. <5 _+>8
-  r2. <_+>4 %225
-  r1
-  r4. <6>2 q8
+  r2. <[4]>8 <_+> %225
+  r2 \bo <[4]>4. \bc <[_+]>8
+  r4. <6!>2 <6>8
   r4 q r4. <6\\>8
   r1
   r2 \bc <[6 \l]> %230
@@ -517,8 +519,8 @@ TeDeumBassFigures = \figuremode {
   r
   r4. <6\\>8 r2
   r1
-  r %235
-  r
+  r2 r8 \bo <[6]> \bc q4 %235
+  r1
   r1.
   <_+>
   r

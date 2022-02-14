@@ -6,13 +6,15 @@
 \book {
   \bookpart {
     \section "Te Deum"
-    % \addTocEntry
+    \addTocEntry
     \paper { indent = 3\cm }
     \score {
       <<
         \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \transposedName "Clarino I, II" "C" ""
+            \set Staff.soloText = \markup \remark \medium "clno 1"
+            \set Staff.soloIIText = \markup \remark \medium "clno 2"
             \partCombine \TeDeumClarinoI \TeDeumClarinoII
           >>
         >>
@@ -61,14 +63,14 @@
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "Organo" "e Bassi" }
-            \transpose c c,
+            % \transpose c c,
             \TeDeumOrgano
           }
         >>
         \new FiguredBass { \TeDeumBassFigures }
       >>
-      % \layout { }
-      \midi { \tempo 4 = 90 }
+      \layout { }
+      \midi { \tempo 4 = 120 }
     }
   }
 }

@@ -87,7 +87,8 @@ TeDeumTenore = {
     c4 r16 c c c c8 c c c16 c
     c4. c8 c2\fermata \bar "||"
     \key f \major \tempoTuDevicto R1*17 \noBreak %171
-    R1\fermata \markFiat \bar "||"
+    R1\fermata \bar "||" \noBreak
+    \cadenzaOn s4*5^\markup \remark "Toccato tacet" \cadenzaOff \bar "||" \noBreak
     \key c \dorian \tempoTeErgo
       \mvTr es2\fE^\tutti r8 es es es
     d4. d8 d4 d8 d
